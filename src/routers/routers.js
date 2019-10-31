@@ -1,6 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter,
+import {  
   Switch,
   Route,
 } from "react-router-dom";
@@ -9,16 +8,14 @@ import { Demo } from '../features/demo'
 
 const Routers = () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/demo" component={Demo} />
+    <Switch>
+      <Route path="/demo" component={Demo} />
 
-        <Route path="/users" />
+      <Route path="/users" />
 
-        <Route path="/" />
+      <Route path="/" />
 
-      </Switch>
-    </BrowserRouter>
+    </Switch>
   )
 }
 

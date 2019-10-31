@@ -1,9 +1,12 @@
 import React from 'react';
+import { DemoContainer } from './containers'
 
-const DemoPage = () => {
+const DemoPage = ({ demo, ...props }) => {
+
   return (
-    <div>DemoPage123</div>
+    <DemoContainer />
   )
 }
 
-export default DemoPage
+
+export default (DemoPage)
