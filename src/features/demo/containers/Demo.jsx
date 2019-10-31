@@ -1,18 +1,24 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux'
+import {getDemoAPI} from '../../../redux/reducers/demo'
 
-const Demo = ({ demo, ...props }) => {
+
+const Demo = ({ getDemoAPI,demo, ...props }) => {
   useEffect(() => {
-
+    getDemoAPI('LTC_BTC','Day');
   }, [])
-  console.log(demo)
+
   return (
-    <div>DemoPage1234</div>
+    <div>{demo.data.map(v => {
+      return (
+        <p>{v.market}</p>)
+    })}
+      DemoPage1234</div>
   )
 }
 
 const mapDispatchToProps = {
-
+  getDemoAPI
 }
 const mapStateToProps = (state) => ({
   demo: state.demo
