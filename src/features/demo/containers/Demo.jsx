@@ -1,18 +1,20 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux'
-import {getDemoAPI} from '../../../redux/reducers/demo'
+import { getDemoAPI } from '../../../redux/reducers/demo'
+import { Button } from 'reactstrap'
 
-
-const Demo = ({ getDemoAPI,demo, ...props }) => {
+const Demo = ({ getDemoAPI, demo, ...props }) => {
   useEffect(() => {
-    getDemoAPI('LTC_BTC','Day');
-  }, [])
+    getDemoAPI('LTC_BTC', 'Day');
+  }, [getDemoAPI])
 
   return (
-    <div>{demo.data.map(v => {
-      return (
-        <p>{v.market}</p>)
-    })}
+    <div className='demo'>
+      <Button color="primary">12345</Button>
+      {demo.data.map(v => {
+        return (
+          <p className='demo__text'>{v.market}</p>)
+      })}
       DemoPage1234</div>
   )
 }
