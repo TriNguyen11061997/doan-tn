@@ -6,6 +6,7 @@ import { getDemoAPI } from 'redux/reducers/demo'
 import { settingAPI } from 'api'
 import Web3 from 'web3';
 import Loader from 'react-loader-spinner'
+const web3 = new Web3(Web3.givenProvider || "http://localhost:8545");
 
 class Demo extends React.Component {
 
@@ -15,13 +16,23 @@ class Demo extends React.Component {
     this.intervalAccount = null;
   }
 
+  toNumber = (val) =>{
+    // div 10^18
+    return val/0xDE0B6B3A7640000;
+  }
+
   async componentDidMount() {
     // this.intervalAccount = setInterval(() => {
     //   this.props.getAccountAPI()
     // }, 1000);
     await settingAPI.connectMetamask();
     await this.props.getAccountAPI()
+    web3.eth.getBalance('0x1697F76C38aB1D02c55db612d990311974bfBDB4')
+      .then(res =>
+        console.log(this.toNumber(res))
+      )
     // this.props.getDemoAPI('LTC_BTC', 'Day');
+    web3.eth.sendTransaction()
   }
 
   componentWillUnmount() {
