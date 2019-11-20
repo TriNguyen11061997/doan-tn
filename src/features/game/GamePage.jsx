@@ -1,10 +1,10 @@
 import React from 'react';
-import {LuckyNumberContainer} from './containers/index'
+import {GameContainer} from './containers/index'
 
 class LuckyNumberPage extends React.Component {
   render() {
     return (
-      <LuckyNumberContainer />
+      <GameContainer />
     )
   }
 }

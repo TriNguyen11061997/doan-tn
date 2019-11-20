@@ -8,9 +8,9 @@ const Header = (props) => {
   const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <div className="lucky-number">
-      <div className="lucky-number__header container-fluid">
-        <div className="lucky-number__header__logo">
+    <div>
+      <div className="game__header container-fluid">
+        <div className="game__header__logo">
           <img src="/assets/imgs/logo.png" alt="" />
           <p>TNTBANKING</p>
         </div>
@@ -69,7 +69,7 @@ const Header = (props) => {
             </NavLink>
           </NavItem>
         </Nav>
-        <div className="lucky-number__header__register">
+        <div className="game__header__register">
           <div>
             <Button><span>Register</span></Button>
           </div>

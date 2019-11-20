@@ -1,15 +1,14 @@
-.lucky-number {
-  width: 100%;
-  background-color: #3a3460;
-  border-bottom: 2px solid #594f9b;
-  position: fixed;
-  top: 0;
-  -webkit-box-shadow: 0 16px 21px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 16px 21px -15px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 16px 21px -15px rgba(0, 0, 0, 0.75);
-  z-index: 999;
-
+.game {
   &__header {
+    width: 100%;
+    background-color: #3a3460;
+    border-bottom: 2px solid #594f9b;
+    position: fixed;
+    top: 0;
+    -webkit-box-shadow: 0 16px 21px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 16px 21px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 16px 21px -15px rgba(0, 0, 0, 0.75);
+    z-index: 999;
     &__logo {
       line-height: 85px;
       float: left;

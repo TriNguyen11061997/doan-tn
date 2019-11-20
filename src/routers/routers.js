@@ -4,16 +4,16 @@ import {
   Route,
 } from "react-router-dom";
 import { Demo } from '../features/demo';
-import { LuckyNumber } from '../features/lucky-numbers';
+import { Game } from '../features/game';
 
 const Routers = () => {
   return (
     <Switch>
       <Route path="/demo" component={Demo} />
 
-      <Route path="/lucky-number" component={LuckyNumber} />
+      <Route path="/lucky-number" component={Game} />
 
-      <Route path="/" component={LuckyNumber} />
+      <Route path="/" component={Game} />
 
     </Switch>
   )
