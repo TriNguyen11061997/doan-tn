@@ -1,19 +1,19 @@
 import React from "react";
-import {  
+import {
   Switch,
   Route,
 } from "react-router-dom";
-import { Demo } from '../features/demo'
-
+import { Demo } from '../features/demo';
+import { Game } from '../features/game';
 
 const Routers = () => {
   return (
     <Switch>
       <Route path="/demo" component={Demo} />
 
-      <Route path="/users" />
+      <Route path="/lucky-number" component={Game} />
 
-      <Route path="/" />
+      <Route path="/" component={Game} />
 
     </Switch>
   )

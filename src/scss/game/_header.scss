@@ -1,0 +1,105 @@
+.game {
+  &__header {
+    width: 100%;
+    background-color: #3a3460;
+    border-bottom: 2px solid #594f9b;
+    position: fixed;
+    top: 0;
+    -webkit-box-shadow: 0 16px 21px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 16px 21px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 16px 21px -15px rgba(0, 0, 0, 0.75);
+    z-index: 999;
+    &__logo {
+      line-height: 85px;
+      float: left;
+      img {
+        width: 60px;
+      }
+      p {
+        float: right;
+        margin: 0;
+        color: white;
+        font-size: 24px;
+        font-weight: 800;
+        margin-left: 10px;
+      }
+    }
+    .nav {
+      line-height: 45px;
+      display: inline-flex;
+      .nav-item {
+        .nav-link {
+          &:hover {
+            opacity: 0.3;
+          }
+          &:focus {
+            opacity: 0.3;
+          }
+          border: unset;
+          h6 {
+            margin-top: 3px;
+            color: #2ee2ba;
+            margin-bottom: 0;
+            font-size: 15px;
+            font-weight: 600;
+          }
+          .h6_white {
+            color: white;
+          }
+        }
+      }
+      .dropdown {
+        .dropdown-toggle {
+          &::after {
+            display: none;
+          }
+          h6 {
+            &::after {
+              display: inline-block;
+              margin-left: 0.255em;
+              vertical-align: 0.255em;
+              content: "";
+              border-top: 0.3em solid;
+              border-right: 0.3em solid transparent;
+              border-bottom: 0;
+              border-left: 0.3em solid transparent;
+            }
+          }
+        }
+      }
+    }
+    .nav-tabs {
+      border-bottom: none;
+      .show .nav-link {
+        background-color: unset;
+      }
+      .dropdown-menu {
+        background-color: #3a3460;
+        .dropdown-item {
+          color: #2ee2ba;
+          &:hover {
+            opacity: 0.3;
+          }
+        }
+      }
+    }
+    &__register {
+      line-height: 85px;
+      float: right;
+      button {
+        padding: 5px 15px;
+        text-decoration: none;
+        line-height: 1.5;
+        border-radius: 5px;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        background-color: #534a8c;
+        border: 2px solid #00d8ff;
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

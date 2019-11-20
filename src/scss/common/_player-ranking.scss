@@ -1,0 +1,26 @@
+.player-ranking {
+  background-color: #3b3560;
+  color: #ffffff;
+  &__data {
+    padding: 0 15px;
+    ul {
+      list-style: none;
+      padding: 0;
+      li{
+        display: flow-root;
+      }
+    }
+    &__player-title {
+      float: left;
+    }
+    &__volume-title {
+      float: right;
+    }
+    &__player-name {
+      float: left;
+    }
+    &__player-value {
+      float: right;
+    }
+  }
+}
