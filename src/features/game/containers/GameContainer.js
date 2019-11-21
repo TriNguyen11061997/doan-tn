@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header } from 'components/lucky-numbers'
-import { PlayerRanking } from 'components/common'
-import { Container, Row, Col } from 'reactstrap';
+import { PlayerRanking, FundAccount } from 'components/common'
+import { Row, Col } from 'reactstrap';
 class GameContainer extends React.Component {
   render() {
     return (
@@ -17,8 +17,19 @@ class GameContainer extends React.Component {
                   <PlayerRanking />
                 </Col>
                 <Col lg="9">
+                  <Row>
+                    <Col lg="7" className="body-left">
+
+                    </Col>
+                    <Col lg="5" className="body-right">
+                      <FundAccount />
+                    </Col>
+                  </Row>
+                  <Row>
+
                   123
-              </Col>
+                  </Row>
+                </Col>
               </Row>
             </div>
           </div>
