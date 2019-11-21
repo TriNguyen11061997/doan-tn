@@ -1,3 +1,21 @@
+*{
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+
+$color-light-sky: #76c0ff;
+$color-bold-blue: #335672;
+$color-blue: #3d83dd;
+$color-dark-blue: #203e56;
+
+$color-black-teal: #1e3649;
+$color-grey-teal: #203e56;
+$color-light-teal: #274861;
+$color-font-green: #00fffc;
+
+
 @import './demo/index';
 @import './game/index';
 @import './common/index';
